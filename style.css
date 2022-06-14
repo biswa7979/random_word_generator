@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+:root{
+    --light-white0: hsl(0,0,95%);
+    --light-white: rgb(249,248,255);
+    --green: rgba(170, 170, 170, 0.742);
+    --pink: rgb(107, 55, 96);
+
+    --color:rgb(68, 49, 140);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    /* list-style: none; */
+}
+body{
+    background-color:var(--light-white0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+ background-color: aqua;
+ width: 300px;
+ height: 500px;
+}
+.frame{
+height:60%;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 5px solid var(--pink);
+}
+.frame h2{
+    background-color: var(--green);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+.btn,
+.timer
+{
+height: 20%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  button:hover {background-color: #3e8e41}
+  
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
