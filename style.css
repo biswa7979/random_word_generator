@@ -30,7 +30,7 @@ body{
  height: 500px;
 }
 .frame{
-height:60%;
+height:55%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -42,13 +42,15 @@ border: 5px solid var(--pink);
     border-radius: 10px;
 }
 .btn,
-.timer
+.timer,
+.refresh
 {
-height: 20%;
+height: 15%;
 display: flex;
 align-items: center;
 justify-content: space-around;
 }
+
 
 button {
     display: inline-block;
