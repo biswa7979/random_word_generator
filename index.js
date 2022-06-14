@@ -43,7 +43,7 @@ const stickyWords =[
 
 var timer = 4000;
 var len = stickyWords.length;
-
+var myInterval;
 
 function one_timer(){
     timer = 15000;
@@ -55,15 +55,16 @@ function third_timer(){
     timer = 15000;
 }
 
-// function start(){
-//     setInterval(word_gen, timer);
-// }
-const myinterval = setInterval(word_gen, timer);
 
 function word_gen(){
     var x = Math.floor((Math.random() *len ) + 1);
     document.getElementById("word").innerHTML = stickyWords[x];
 }
+
+function start(){
+    myInterval = setInterval(word_gen, timer);
+    
+}
 function stop(){
-    clearInterval(myinterval);
+    clearInterval(myInterval);
 }
